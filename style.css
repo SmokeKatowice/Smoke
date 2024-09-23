@@ -2,11 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://i.imgur.com/BM92v4Z.png'); /* Фон для десктопа */
-    background-size: cover;
+    background-color: #333;
+    background-image: url('./img/BM92v4Z.png'); /* Фон для десктопа */
+    background-size: 20% cover;
     background-position: center;
     background-attachment: fixed;
     color: rgb(255, 255, 255);
+  
 }
 
 .price {
@@ -20,7 +22,7 @@ body {
 @media (max-width: 768px) {
     body {
         background-image: url('./img/aePXwJC.png'); /* Фон для мобильных устройств */
-        background-size: cover;
+        background-size: 100% cover;
         background-position: center;
     }
 }
