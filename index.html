@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Smokehouse Menu</title>
+
+</head>
+<body>
+
+<!-- Модальное окно -->
+<div class="modal" id="welcomeModal">
+    <div class="modal-content">
+        <h2>Wybierz kategorię</h2>
+        <div class="menu-grid">
+            <div class="menu-option">
+                <a href="#hookah-menu">
+                    <img src="https://i.imgur.com/5NpQUKS.png" alt="Szisza Menu">
+                    <p>Szisza Menu</p>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a href="#koktajli">
+                    <img src="https://i.imgur.com/aEAKAVh.png" alt="Koktajli">
+                    <p>Koktajli</p>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a href="#alkohol">
+                    <img src="https://i.imgur.com/Rth0GJ5.png" alt="Alkohol">
+                    <p>Alkohol</p>
+                </a>
+            </div>
+            <div class="menu-option">
+                <a href="#alkohol-free">
+                    <img src="https://i.imgur.com/GKjXrfy.png" alt="Alkohol Free">
+                    <p>Alkohol Free</p>
+                </a>
+            </div>
+        </div>
+        <div class="close-modal" id="closeModal">Zamknij</div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Witamy w Smokehouse!</h1>
+
+    <!-- Szisza (Hookah) Menu -->
+    <h2 id="hookah-menu" class="underline">Hookah Menu</h2>
+    <div class="hookah-options">
+        <p>Light - 80 zł</p>
+        <p>Standart - 90 zł</p>
+        <p>Premium - 100 zł</p>
+        <h4>Smaki:</h4>
+        <p>Fruit Mix, Orange, Pina Colada, Mint, Ice, Tropical Mix, Double Apple, Watermelon, Pineapple, Lime, Grejpfrut</p>
+        <h4>Shisha na owocach:</h4>
+        <p>Ananas - +35 zł</p>
+        <p>Grejpfrut - +20 zł</p>
+        <h4>Płyn w Wazie:</h4>
+        <p>Mleko - +15 zł</p>
+    </div>
+
+    <!-- Koktajle -->
+    <h2 id="koktajli" class="underline">Koktaile</h2>
+    <div class="menu-item">
+        <h4>Long Island</h4>
+        <p>Wódka, rum, tequila, gin, triple sec, cola</p>
+        <p class="price">35 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Aperol Spritz</h4>
+        <p>Aperol, prosecco, woda gazowana</p>
+        <p class="price">30 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Pina Colada</h4>
+        <p>Rum, malibu, sok ananasowy, kokos, mleko</p>
+        <p class="price">28 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Cuba Libre</h4>
+        <p>Rum, cola</p>
+        <p class="price">25 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Negroni</h4>
+        <p>Gin, campari, martini</p>
+        <p class="price">28 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Blue Lagoon</h4>
+        <p>Wódka, blue curacao, sprite</p>
+        <p class="price">28 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Mojito</h4>
+        <p>Rum, sprite, mięta, limonka, syrop cukrowy</p>
+        <p class="price">30 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Jager Bomb</h4>
+        <p>Jagermeister, burn</p>
+        <p class="price">25 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Sex on the Beach</h4>
+        <p>Wódka, likier brzoskwiniowy, sok żurawinowy, sok ananasowy</p>
+        <p class="price">32 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Tequila Sunrise</h4>
+        <p>Tequila, sok pomarańczowy, grenadyna</p>
+        <p class="price">27 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Daiquiri</h4>
+        <p>Rum, sok z limonki, syrop cukrowy</p>
+        <p class="price">25 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Gin Tonic</h4>
+        <p>Gin, tonic</p>
+        <p class="price">25 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Whiskey Sour</h4>
+        <p>Whiskey, sok z cytryny, syrop cukrowy, białko jajka</p>
+        <p class="price">29 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Cosmopolitan</h4>
+        <p>Wódka, likier triple sec, sok żurawinowy, świeża limonka</p>
+        <p class="price">26 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>White Night</h4>
+        <p>Wódka, likier kahlua, śmietanka</p>
+        <p class="price">30 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Black Night</h4>
+        <p>Wódka, likier kahlua</p>
+        <p class="price">30 zł</p>
+    </div>
+
+    <!-- Alkohol -->
+    <h2 id="alkohol" class="underline">Alkohol</h2>
+    <h4>Whiskey:</h4>
+    <div class="menu-item">
+        <h4>Chivas (12y/o)</h4>
+        <p class="price">18 zł / 40ml</p>
+    </div>
+    <div class="menu-item">
+        <h4>Ballantines</h4>
+        <p class="price">18 zł / 40ml</p>
+    </div>
+    <div class="menu-item">
+        <h4>Jack Daniels</h4>
+        <p class="price">18 zł / 40ml</p>
+    </div>
+    <div class="menu-item">
+        <h4>Jack D.Honey</h4>
+        <p class="price">19 zł / 40ml</p>
+    </div>
+    <div class="menu-item">
+        <h4>Jameson</h4>
+        <p class="price">21 zł / 40ml</p>
+    </div>
+
+    <h4>Rum:</h4>
+    <div class="menu-item">
+        <h4>Bacardi Carta Blanca</h4>
+        <p class="price">19 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Bacardi Carta Oro</h4>
+        <p class="price">19 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Bacardi Carta Negro</h4>
+        <p class="price">19 zł</p>
+    </div>
+
+    <h4>Tequila:</h4>
+    <div class="menu-item">
+        <h4>Gold Tequila</h4>
+        <p class="price">20 zł</p>
+    </div>
+    <div class="menu-item">
+        <h4>Silver Tequila</h4>
+        <p class="price">18 zł</p>
+    </div>
+
+    <!-- Alkohol Free -->
+    <h2 id="alkohol-free" class="underline">Alkohol Free</h2>
+    <div class="menu-item menu-item--compact">
+        <h4>Coca Cola 0,2</h4>
+        <p class="price">10 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Sprite 0,2</h4>
+        <p class="price">10 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Fanta 0,2</h4>
+        <p class="price">10 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Burn</h4>
+        <p class="price">14 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Red Bull</h4>
+        <p class="price">16 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Virgin Mojito</h4>
+        <p class="price">20 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Virgin Colada</h4>
+        <p class="price">20 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Home Made Lemonade</h4>
+        <p class="price">16 zł</p>
+    </div>
+
+    <!-- Przekąski -->
+    <h2 class="underline">Przekąski</h2>
+    <div class="menu-item menu-item--compact">
+        <h4>Pringles</h4>
+        <p class="price">18 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Lays</h4>
+        <p class="price">16 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Orzeszki</h4>
+        <p class="price">16 zł</p>
+    </div>
+    <div class="menu-item menu-item--compact">
+        <h4>Lays 40g</h4>
+        <p class="price">16 zł</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Smokehouse Menu</p>
+</footer>
+
+<script>
+    // Закрытие модального окна
+    document.getElementById("closeModal").onclick = function() {
+        document.getElementById("welcomeModal").style.display = "none";
+    };
+
+    // Закрытие модального окна при клике на ссылку
+    document.querySelectorAll(".menu-option a").forEach(link => {
+        link.onclick = function() {
+            document.getElementById("welcomeModal").style.display = "none";
+        };
+    });
+</script>
+
+</body>
+</html>
