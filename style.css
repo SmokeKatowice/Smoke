@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.imgur.com/BM92v4Z.png'); /* Фон для десктопа */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+}
+
+.price {
+    color: #FFD700 !important;
+}
+
+.volume { 
+    font-size: 0.7em;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('https://i.imgur.com/aePXwJC.png'); /* Фон для мобильных устройств */
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+.underline {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-item h4 {
+    font-size: 24px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal a {
+    text-decoration: none;
+}
+
+.modal-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.menu-option img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-option img:hover {
+    transform: scale(1.1);
+}
+
+.menu-option p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.close-modal {
+    margin-top: 20px;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .menu-option img {
+        width: 80px;
+        height: 80px;
+    }
+}
