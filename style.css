@@ -10,7 +10,7 @@ body {
 }
 
 .price {
-    color: #FFD700 !important;
+    color: #FFD700;
 }
 
 .volume { 
@@ -19,7 +19,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-image: url('https://i.imgur.com/aePXwJC.png'); /* Фон для мобильных устройств */
+        background-image: url('./img/aePXwJC.png'); /* Фон для мобильных устройств */
         background-size: cover;
         background-position: center;
     }
