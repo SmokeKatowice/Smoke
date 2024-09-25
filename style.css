@@ -20,11 +20,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-image: url('./img/background.png'); /* Фон для мобильных устройств */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        background-image: url('./img/background.png');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        z-index: -1; 
     }
 }
 
