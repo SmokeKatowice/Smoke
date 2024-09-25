@@ -21,8 +21,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    body {
-        
+    body::before {
         background: url("./img/background.png") no-repeat center center;
         background-size: cover;
         content: ' ';
