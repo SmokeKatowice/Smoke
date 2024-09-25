@@ -266,5 +266,21 @@
     });
 </script>
 
+<script>
+    function setBodyBackgroundHeight() {
+        const height = window.innerHeight;
+        const style = document.createElement('style');
+        style.innerHTML = `
+            body::before {
+                height: ${height}px;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    window.addEventListener('resize', setBodyBackgroundHeight);
+    window.addEventListener('load', setBodyBackgroundHeight);
+</script>
+    
 </body>
 </html>
