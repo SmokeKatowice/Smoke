@@ -39,6 +39,7 @@ body::before {
         width: 100px;
         height: 1900px;
         background-image: url('./img/background.png'); /* Фон для мобильных устройств */
+        background-size:  cover;
         background-position: center;
         background-repeat: no-repeat;
         z-index: -1; /* Фон находится за контентом */
