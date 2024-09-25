@@ -36,7 +36,7 @@ body {
         background: url("./img/background.png") no-repeat center center;
         background-size: cover;
         content: ' ';
-        min-height: 100vh;
+        min-height: -webkit-fill-available;
         left: 0;
         position: fixed;
         top: 0;
