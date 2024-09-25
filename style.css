@@ -26,7 +26,7 @@ body {
         background: url("./img/background.png") no-repeat center center;
         background-size: cover;
         content: ' ';
-        height: 100%;
+        min-height: 100vh;
         left: 0;
         position: fixed;
         top: 0;
