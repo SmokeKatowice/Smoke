@@ -31,19 +31,19 @@ body {
         height: 100%;
     }
 
-    body::before {
-        
-        background: url("./img/background.png") no-repeat center center;
-        background-size: cover;
-        content: ' ';
-        min-height: -webkit-fill-available;
-        left: 0;
+body::before {
+        content: "";
         position: fixed;
         top: 0;
-        width: 100%;
-        will-change: transform;
-        z-index: -1;
-        
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./img/background.png'); /* Фон для мобильных устройств */
+        background-size: 120%; /* Масштабирование до 120% */
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1; /* Фон находится за контентом */
+        pointer-events: none; /* Чтобы контент был кликабельным */
     }
 }
 
