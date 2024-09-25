@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #333;
     background-image: url('./img/BM92v4Z.png'); /* Фон для десктопа */
-    background-size: 20% cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: rgb(255, 255, 255);
@@ -21,8 +21,8 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-image: url('./img/aePXwJC.png'); /* Фон для мобильных устройств */
-        background-size: 100% cover;
+        background-image: url('./img/background.png'); /* Фон для мобильных устройств */
+        background-size: cover;
         background-position: center;
     }
 }
