@@ -1,4 +1,5 @@
 body {
+    position: relative;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -21,11 +22,17 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background: url(./img/background.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+        
+        background: url("./img/background.png") no-repeat center center;
+        background-size: cover;
+        content: ' ';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: -1;
         
     }
 }
