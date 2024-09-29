@@ -391,7 +391,24 @@
         <li><a href="#snacks"><img src="./img/icons/food.png" alt="Przekąski"><div>Przekąski</div></a></li>
     </ul>
 </div>
+<script>
+    document.querySelectorAll('.fixed-menu a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
 
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            // Сдвиг на 15 пикселей вверх
+            const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 15;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
