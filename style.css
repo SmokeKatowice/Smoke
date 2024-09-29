@@ -24,11 +24,7 @@ body {
 }
 
 
-
-
-
-@media (max-width: 768px) {
-    .fixed-menu {
+  .fixed-menu {
         width: 100%;
         background-color: #000;
         position: fixed;
@@ -80,7 +76,7 @@ body {
         color: white;
         text-decoration: none;
     }
-}
+
 
 .container {
     display: flex;
