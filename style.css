@@ -1,45 +1,89 @@
 body {
     position: relative;
-    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #333;
-    background-image: url('./img/BM92v4Z.png'); /* Фон для десктопа */
-    background-size:  cover;
+    padding: 0 0 100px 0;
+    background-color: #000000;
+    background-image: url('./img/background.png'); /* Фон для мобильных устройств */
+    background-size: 100%;
     background-position: center;
-    background-attachment: fixed;
-    color: rgb(255, 255, 255);
-  
+    background-repeat: repeat-y;
+    color: #fff;
 }
 
-.price {
-    color: #FFD700;
+.logo {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.volume { 
-    font-size: 0.7em;
+.logo img {
+    width: 100%;
 }
+
+.fixed-menu {
+    display: none;
+}
+
+
+
+
+
 
 @media (max-width: 768px) {
-
-    .menu-option img {
-        width: 80px;
-        height: 80px;
+    .fixed-menu {
+        width: 100%;
+        background-color: #000;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        min-height: 55px;
+        font-size: 0.9em;
     }
 
-body::before {
+    .fixed-menu::before {
         content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
+        display: block;
         width: 100%;
-        height: 100%;
-        background-image: url('./img/background.png'); /* Фон для мобильных устройств */
-        background-size:  cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1; /* Фон находится за контентом */
-        pointer-events: none; /* Чтобы контент был кликабельным */
+        height: 2px;
+        background: linear-gradient(to right, rgba(163, 163, 163, 0), rgba(255, 255, 255, 0.45), rgba(163, 163, 163, 0));
+        position: absolute;
+        top: -2px;
+        left: 0;
+    }
+
+    .fixed-menu ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        min-height: 35px;
+        width: 90%;
+        padding: 15px 20px;
+        margin: 0;
+        list-style: none;
+
+    }
+
+    .fixed-menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fixed-menu ul li img {
+        max-width: 32px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
+    .fixed-menu ul li a {
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -60,81 +104,122 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-size: 1.6em;
+    position: relative;
+    margin-top: 40px;
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+#hookah-menu::before,
+#alkohol-free::before,
+#coctails::before,
+#snacks::before,
+#whiskey::before,
+#beer::before,
+#shots::before {
+    content: "";
+    position: absolute; /* Абсолютное позиционирование */
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 10px; /* Отступ для красоты */
+    left: -40px;
+    bottom: 10px; /* Выравниваем по нижней части текста */
+    transform: translateY(0); /* Убираем вертикальное смещение */
+}
+
+
+#hookah-menu::before {
+    background-image: url('./img/icons/hookah.png');
+}
+
+#alkohol-free::before {
+    background-image: url('./img/icons/drinks.png');
+}
+
+#coctails::before {
+    background-image: url('./img/icons/coctail.png');
+}
+
+#snacks::before {
+    background-image: url('./img/icons/food.png');
+}
+#shots::before {
+    background-image: url('./img/icons/shots.png');
+}
+
+#whiskey::before {
+    background-image: url('./img/icons/whiskey.png');
+}
+
+#beer::before {
+    background-image: url('./img/icons/beer.png');
+}
+
+
 .underline {
-    border-bottom: 2px solid white;
+    position: relative;
+    display: inline-block;
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.menu-item h4 {
-    font-size: 24px;
-    margin-bottom: 3px;
-    color: white;
-}
-
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-
-.modal {
+.underline::after {
+    content: "";
     display: block;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    height: 2px;
+    background: linear-gradient(to right, rgba(163, 163, 163, 0), rgba(255, 255, 255, 0.8), rgba(163, 163, 163, 0));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+.menu-section {
+    width: 100%;
+    margin: 0 0 20px;
+    max-width: 800px;
+}
+
+.menu-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Легкие линии */
 }
 
-.modal a {
-    text-decoration: none;
+.menu-item:last-child {
+    border-bottom: none;
+
 }
 
-.modal-content {
-    text-align: center;
-    padding: 20px;
-    max-width: 500px;
-    background-color: #333;
-    border-radius: 10px;
+.item-name {
+    color: white;
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
+.drink-size {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
 }
 
-.menu-option img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.item-price {
+    color: yellow;
 }
 
-.menu-option img:hover {
-    transform: scale(1.1);
-}
 
-.menu-option p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #FFD700;
-    text-decoration: none;
-}
 
-.close-modal {
-    margin-top: 20px;
-    color: #bbb;
-    cursor: pointer;
-    font-size: 16px;
+h3 {
+    color: lightgray;
+    font-size: 1.5em;
+    margin: 25px 0 0;
 }
