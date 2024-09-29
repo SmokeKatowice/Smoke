@@ -180,16 +180,9 @@ h2, h3 {
 
 
 
-.menu-section {
-    width: 100%;
-    margin: 0 0 20px;
-    max-width: 800px;
-}
-
 .menu-item {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Выровнять по началу сверху */
+    flex-direction: column; /* Элементы меню располагаются по вертикали */
     padding: 7px 0;
     font-size: 1.3em;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Легкие линии */
@@ -201,27 +194,20 @@ h2, h3 {
 
 .item-name {
     color: white;
-}
-
-.drink-size, .item-description {
-    font-size: 0.7em;
-    font-weight: 400;
-    color: rgb(160, 160, 160);
+    margin-bottom: 3px; /* Отступ под названием */
 }
 
 .item-price {
     color: yellow;
 }
 
-.item-details {
-    display: flex;
-    flex-direction: column; /* Выровнять название и описание по вертикали */
-}
-
 .item-description {
-    margin-top: 3px; /* Маленький отступ под названием */
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
+    margin-top: 5px; /* Отступ над описанием, чтобы отделить от цены */
+    display: block; /* Обеспечить отображение на новой строке */
 }
-
 
 
 h3 {
