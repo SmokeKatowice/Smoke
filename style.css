@@ -178,7 +178,17 @@ h2, h3 {
 }
 
 
+.menu-section {
+    width: 100%;
+    margin: 0 0 20px;
+    max-width: 800px;
+}
 
+.drink-size {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(160, 160, 160);
+}
 
 .menu-item {
     padding: 7px 0;
@@ -206,11 +216,12 @@ h2, h3 {
 }
 
 .item-description {
-    font-size: 0.7em;
+    font-size: 0.55em;
     font-weight: 400;
     color: rgb(160, 160, 160);
     margin-top: 5px; /* Отступ над описанием */
     display: block; /* Описание на новой строке */
+    text-align: start;
 }
 
 
