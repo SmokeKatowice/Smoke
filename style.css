@@ -181,8 +181,6 @@ h2, h3 {
 
 
 .menu-item {
-    display: flex;
-    flex-direction: column; /* Элементы меню располагаются по вертикали */
     padding: 7px 0;
     font-size: 1.3em;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Легкие линии */
@@ -192,9 +190,14 @@ h2, h3 {
     border-bottom: none;
 }
 
+.item-header {
+    display: flex;
+    justify-content: space-between; /* Название слева, цена справа */
+    align-items: center;
+}
+
 .item-name {
     color: white;
-    margin-bottom: 3px; /* Отступ под названием */
 }
 
 .item-price {
@@ -205,8 +208,8 @@ h2, h3 {
     font-size: 0.7em;
     font-weight: 400;
     color: rgb(160, 160, 160);
-    margin-top: 5px; /* Отступ над описанием, чтобы отделить от цены */
-    display: block; /* Обеспечить отображение на новой строке */
+    margin-top: 5px; /* Отступ над описанием */
+    display: block; /* Описание на новой строке */
 }
 
 
