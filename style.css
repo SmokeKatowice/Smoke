@@ -55,6 +55,7 @@ body {
         padding: 15px 20px;
         margin: 0;
         list-style: none;
+        max-widh: 700px;
 
     }
 
