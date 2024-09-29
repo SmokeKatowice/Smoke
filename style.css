@@ -191,6 +191,7 @@ h2, h3 {
 }
 
 .item-header {
+    width:100%;
     display: flex;
     justify-content: space-between; /* Название слева, цена справа */
     align-items: center;
