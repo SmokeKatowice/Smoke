@@ -13,6 +13,24 @@
     <link rel="preload" href="./img/icons/food.png" as="image">
     <title>Smokehouse Menu</title>
 
+    <style>
+        .allergens{
+            font-size:.62em; font-weight:500; vertical-align:super;
+            margin-left:.28em; letter-spacing:.02em; opacity:.75;
+            white-space:nowrap;
+        }
+        .allergen-note{
+            margin:14px 0 34px; padding:14px 16px;
+            border:1px solid rgba(128,128,128,.35); border-radius:6px;
+            font-size:.85em; line-height:1.55;
+        }
+        .allergen-note ol{
+            margin:10px 0 0; padding-left:0; list-style:none;
+            column-width:190px; column-gap:26px;
+        }
+        .allergen-note ol li{ margin-bottom:4px; }
+        .allergen-note ol li b{ display:inline-block; min-width:1.6em; }
+    </style>
 </head>
 <body>
 
@@ -63,7 +81,7 @@
     <div class="menu-section">
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Mleko</span>
+                <span class="item-name">Mleko<sup class="allergens">7</sup></span>
                 <span class="item-price">15 zł</span>   
             </div>
         </div>
@@ -90,7 +108,7 @@
     
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Stone Island</span>
+                <span class="item-name">Stone Island<sup class="allergens">12</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
             <span class="item-description">Wódka, Archers, sok pomarań.,żurawina</span>
@@ -98,7 +116,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Aperol Spritz</span>
+                <span class="item-name">Aperol Spritz<sup class="allergens">12</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
             <span class="item-description">Aperol, prosecco, sparling water</span>
@@ -114,7 +132,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Pina Colada</span>
+                <span class="item-name">Pina Colada<sup class="allergens">7</sup></span>
                 <span class="item-price">30 zł</span>
             </div>
             <span class="item-description">Rum, malibu, pineapple juice, coconut, milk</span>
@@ -130,7 +148,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Negroni</span>
+                <span class="item-name">Negroni<sup class="allergens">12</sup></span>
                 <span class="item-price">30 zł</span>
             </div>
             <span class="item-description">Gin, campari, martini</span>
@@ -162,7 +180,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Sex on the beach</span>
+                <span class="item-name">Sex on the beach<sup class="allergens">12</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
             <span class="item-description">Wódka, peach liqueur, grenadine juice, pineapple juice</span>
@@ -170,7 +188,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Tequila Sunrise</span>
+                <span class="item-name">Tequila Sunrise<sup class="allergens">12</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
             <span class="item-description">Tequila, orange juice, grenadine</span>
@@ -186,7 +204,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Pornstar</span>
+                <span class="item-name">Pornstar<sup class="allergens">12</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
             <span class="item-description">Wódka, liquer marakuja, wino, lime juice, sugar syrup</span>
@@ -202,7 +220,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Cosmopolitan</span>
+                <span class="item-name">Cosmopolitan<sup class="allergens">12</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
             <span class="item-description">Wódka, liqueur triple sec, cranberry juice, lime fresh</span>
@@ -218,7 +236,7 @@
     <div class="menu-section">
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">B 52</span>
+                <span class="item-name">B 52<sup class="allergens">7</sup></span>
                 <span class="item-price">21 zł</span>
             </div>
             <span class="item-description">Kahlua, baileys, triple sec</span>
@@ -226,7 +244,7 @@
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Brain Damage</span>
+                <span class="item-name">Brain Damage<sup class="allergens">7</sup></span>
                 <span class="item-price">21 zł</span>
             </div>
             <span class="item-description">Peach schnapps, irish cream liqueur, grenadine</span>
@@ -234,7 +252,7 @@
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Medusa</span>
+                <span class="item-name">Medusa<sup class="allergens">7, 8</sup></span>
                 <span class="item-price">21 zł</span>
             </div>
             <span class="item-description">Coffee liqueur, amaretto, baileys, blue curacao</span>
@@ -242,7 +260,7 @@
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Hiroshima</span>
+                <span class="item-name">Hiroshima<sup class="allergens">7</sup></span>
                 <span class="item-price">22 zł</span>
             </div>
             <span class="item-description">Sambuca, irish cream, absinthe, grenadine</span>
@@ -250,7 +268,7 @@
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Barbie shot(4 shots)</span>
+                <span class="item-name">Barbie shot(4 shots)<sup class="allergens">7</sup></span>
                 <span class="item-price">40 zł</span>
             </div>
             <span class="item-description">Wódka, irish cream liqueur, malina syrup</span>
@@ -297,7 +315,7 @@
         <div class="menu-item">
             <div class="item-header">
                 <div>
-                    <span class="item-name">Corona</span>
+                    <span class="item-name">Corona<sup class="allergens">1</sup></span>
                     <span class="drink-size">0,33 l</span>
                 </div>
                 <span class="item-price">18 zł</span>   
@@ -307,7 +325,7 @@
          <div class="menu-item">
             <div class="item-header">
                 <div>
-                    <span class="item-name">Książęce Psz.Lane</span>
+                    <span class="item-name">Książęce Psz.Lane<sup class="allergens">1</sup></span>
                     <span class="drink-size">0,5 l</span>
                 </div>
                 <span class="item-price">18 zł</span>   
@@ -317,7 +335,7 @@
         <div class="menu-item">
             <div class="item-header">
                 <div>
-                <span class="item-name">Lech</span>
+                <span class="item-name">Lech<sup class="allergens">1</sup></span>
                 <span class="drink-size">0,5 l</span>
                 </div>
                 <span class="item-price">16 zł</span>   
@@ -327,7 +345,7 @@
         <div class="menu-item">
             <div class="item-header">
                 <div>
-                <span class="item-name">Tyskie</span>
+                <span class="item-name">Tyskie<sup class="allergens">1</sup></span>
                 <span class="drink-size">0,5 l</span>
                 </div>
                 <span class="item-price">16 zł</span>   
@@ -337,7 +355,7 @@
         <div class="menu-item">
             <div class="item-header">
                 <div>
-                <span class="item-name">Tyskie</span>
+                <span class="item-name">Tyskie<sup class="allergens">1</sup></span>
                 <span class="drink-size">0,33 l</span>
                 </div>
                 <span class="item-price">14 zł</span>   
@@ -347,7 +365,7 @@
           <div class="menu-item">
             <div class="item-header">
                 <div>
-                <span class="item-name">Książęce IPA 0%</span>
+                <span class="item-name">Książęce IPA 0%<sup class="allergens">1</sup></span>
                 <span class="drink-size">0,5 l</span>
                 </div>
                 <span class="item-price">16 zł</span>   
@@ -357,7 +375,7 @@
          <div class="menu-item">
             <div class="item-header">
                 <div>
-                <span class="item-name">Książęce Zł.PSZ.0%</span>
+                <span class="item-name">Książęce Zł.PSZ.0%<sup class="allergens">1</sup></span>
                 <span class="drink-size">0,5 l</span>
                 </div>
                 <span class="item-price">16 zł</span>   
@@ -367,7 +385,7 @@
         <div class="menu-item">
             <div class="item-header">
                 <div>
-                <span class="item-name">Corona 0%</span>
+                <span class="item-name">Corona 0%<sup class="allergens">1</sup></span>
                 <span class="drink-size">0,33 l</span>
                 </div>
                 <span class="item-price">16 zł</span>   
@@ -514,7 +532,7 @@
 
          <div class="menu-item">
             <div class="item-header">
-                    <span class="item-name">Virgin Pornstar</span>
+                    <span class="item-name">Virgin Pornstar<sup class="allergens">12</sup></span>
                     <span class="item-price">30 zł</span>   
             </div>
         </div>
@@ -528,7 +546,7 @@
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Virgin Colada</span>
+                <span class="item-name">Virgin Colada<sup class="allergens">7</sup></span>
                 <span class="item-price">25 zł</span>   
             </div>
         </div>
@@ -570,14 +588,14 @@
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Cappuccino</span>
+                <span class="item-name">Cappuccino<sup class="allergens">7</sup></span>
                 <span class="item-price">14 zł</span>   
             </div>
         </div>
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Latte</span>
+                <span class="item-name">Latte<sup class="allergens">7</sup></span>
                 <span class="item-price">14 zł</span>   
             </div>
         </div>
@@ -621,34 +639,34 @@
         
             <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Smoke Beef Burger</span>
+                <span class="item-name">Smoke Beef Burger<sup class="allergens">1, 3, 7, 10, 11</sup></span>
                 <span class="item-price">35 zł</span>
             </div>
-            <span class="item-description">Bułka pszenna, wołowina, pomidor, ser, sałata, sos, cebula czerwona, ogórek, +frytki S</span>
+            <span class="item-description">Bułka pszenna z sezamem, wołowina, pomidor, ser, sałata, sos, cebula czerwona, ogórek, +frytki S</span>
         </div>
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Smoke Chicken Burger</span>
+                <span class="item-name">Smoke Chicken Burger<sup class="allergens">1, 3, 6, 7, 10, 11</sup></span>
                 <span class="item-price">30 zł</span>
             </div>
-            <span class="item-description">Bułka pszenna, kotlet z kurczaka, pomidor, ser, sałata, sos, ogórek, +frytki S</span>
+            <span class="item-description">Bułka pszenna z sezamem, kotlet z kurczaka, pomidor, ser, sałata, sos, ogórek, +frytki S · może zawierać: 9</span>
         </div>
 
          <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Smoke Beef Bacon</span>
+                <span class="item-name">Smoke Beef Bacon<sup class="allergens">1, 3, 7, 10, 11</sup></span>
                 <span class="item-price">36 zł</span>
             </div>
-            <span class="item-description">Bułka pszenna, wołowina, bekon, pomidor, ser, sałata, sos, cebula czerwona, ogórek, +frytki S</span>
+            <span class="item-description">Bułka pszenna z sezamem, wołowina, bekon, pomidor, ser, sałata, sos, cebula czerwona, ogórek, +frytki S</span>
         </div>
         
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Smoke Beef Double</span>
+                <span class="item-name">Smoke Beef Double<sup class="allergens">1, 3, 7, 10, 11</sup></span>
                 <span class="item-price">40 zł</span>
             </div>
-            <span class="item-description">Bułka pszenna, wołowina*2, bekon, pomidor, ser, sałata, sos, cebula czerwona, ogórek, +frytki S</span>
+            <span class="item-description">Bułka pszenna z sezamem, wołowina*2, bekon, pomidor, ser, sałata, sos, cebula czerwona, ogórek, +frytki S</span>
         </div>
 
         
@@ -662,40 +680,63 @@
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Nuggets Smoke</span>
+                <span class="item-name">Nuggets Smoke<sup class="allergens">1, 7, 9</sup></span>
                 <span class="item-price">12/18/24 zł</span>
             </div>
-            <span class="item-description">6szt/9szt/12szt</span>
+            <span class="item-description">6szt/9szt/12szt · może zawierać: 3, 6, 10</span>
         </div>
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Skrzydełka Wings</span>
+                <span class="item-name">Skrzydełka Wings<sup class="allergens">1</sup></span>
                 <span class="item-price">22/35/45 zł</span>
             </div>
             <span class="item-description">6szt/9szt/12szt</span>
         </div>
            <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Pringles</span>
+                <span class="item-name">Pringles<sup class="allergens">1, 6, 7</sup></span>
                 <span class="item-price">20 zł</span>   
             </div>
         </div>
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Lays</span>
+                <span class="item-name">Lays<sup class="allergens">7</sup></span>
                 <span class="item-price">18 zł</span>   
             </div>
         </div>
 
         <div class="menu-item">
             <div class="item-header">
-                <span class="item-name">Orzeszki</span>
+                <span class="item-name">Orzeszki<sup class="allergens">5</sup></span>
                 <span class="item-price">18 zł</span>   
             </div>
         </div>
         
+    </div>
+
+    <div class="allergen-note">
+        <b>Alergeny</b> — cyfry przy nazwach odnoszą się do listy poniżej (zgodnie z rozporządzeniem UE nr 1169/2011).
+        Potrawy przygotowujemy we wspólnej kuchni, dlatego nie możemy wykluczyć śladowych ilości innych alergenów.
+        Zapis „może zawierać” oznacza możliwe śladowe ilości wskazane przez producenta.
+        W razie alergii lub nietolerancji zapytaj obsługę — podamy dokładny skład produktu.
+        <ol>
+            <li><b>1.</b> Zboża zawierające gluten</li>
+            <li><b>2.</b> Skorupiaki</li>
+            <li><b>3.</b> Jaja</li>
+            <li><b>4.</b> Ryby</li>
+            <li><b>5.</b> Orzeszki ziemne</li>
+            <li><b>6.</b> Soja</li>
+            <li><b>7.</b> Mleko (w tym laktoza)</li>
+            <li><b>8.</b> Orzechy</li>
+            <li><b>9.</b> Seler</li>
+            <li><b>10.</b> Gorczyca</li>
+            <li><b>11.</b> Nasiona sezamu</li>
+            <li><b>12.</b> Dwutlenek siarki i siarczyny</li>
+            <li><b>13.</b> Łubin</li>
+            <li><b>14.</b> Mięczaki</li>
+        </ol>
     </div>
 
 </div>
